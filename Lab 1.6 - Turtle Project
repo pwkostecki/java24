@@ -1,0 +1,65 @@
+import java.awt.*;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        World world = new World(400, 400);
+        Turtle yertle = new Turtle(world);
+        Turtle pertle = new Turtle(world);
+        Turtle zertle = new Turtle(world);
+        // Add your own code in here
+
+        yertle.setColor(Color.white);
+        yertle.turnLeft();
+        yertle.forward();
+        yertle.turnRight();
+        yertle.setColor(Color.red);
+        yertle.forward();
+        yertle.forward();
+        yertle.turnRight();
+        yertle.forward();
+        yertle.turnRight();
+        yertle.forward();
+        yertle.turnRight();
+        yertle.forward();
+
+
+        pertle.setColor(Color.white);
+        pertle.turnRight();
+        pertle.forward();
+        pertle.turnLeft();
+        pertle.setColor(Color.pink);
+        pertle.forward();
+        pertle.forward();
+        pertle.backward();
+        for (int i = 0; i < 50; i++) {
+            pertle.forward(1);
+            pertle.turnRight();
+            pertle.forward(1);
+            pertle.turnLeft();
+        }
+        for (int i = 0; i < 50; i++) {
+            pertle.backward(1);
+            pertle.turnRight();
+            pertle.backward(1);
+            pertle.turnLeft();
+        }
+        zertle.setColor(Color.white);
+        zertle.turnRight();
+        zertle.forward();
+        zertle.turnLeft();
+        zertle.setColor(Color.pink);
+        zertle.forward();
+        zertle.turnRight();
+        zertle.turnRight();
+        for (int i = 0; i < 50; i++) {
+            zertle.forward(1);
+            zertle.turnLeft();
+            zertle.forward(1);
+            zertle.turnRight();
+        }
+
+        world.setVisible(true);
+    }
+}
+
