@@ -1,0 +1,9 @@
+public class test
+{
+   public static void main(String[] args)
+   String m = "Look here!";
+
+count = m.length
+
+System.out.Println(m + count);
+   {
